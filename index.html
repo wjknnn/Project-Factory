@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Project Factory</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/header.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
 <header>
@@ -84,7 +83,19 @@
             <img src="image/footerGithub.png">
         </div>
     </div>
-
 </footer>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            $('article').each(function (i) {
+                let bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                let bottom_of_window = $(window).scrollTop() + $(window).height();
+                if (bottom_of_window > bottom_of_element) {
+                    $(this).animate({'opacity': '1'}, 700);
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
