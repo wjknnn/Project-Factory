@@ -65,6 +65,7 @@ article {
     height: 560px;
     width: 100%;
     margin-bottom: 150px;
+    opacity: 0;
 }
 
 .articleBox {
