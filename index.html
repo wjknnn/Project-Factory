@@ -5,7 +5,6 @@
     <title>Project Factory</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
 <header>
@@ -18,8 +17,10 @@
     </nav>
 </header>
 <div class="landingImg">
-    <h1>PROJECT<br>FACTORY</h1>
-    <img src="image/landingimg.png">
+    <div>
+        <h1>Welcome To</h1>
+        <h2>PROJECT<br>FACTORY</h2>
+    </div>
 </div>
 <section>
     <div class="popularProject">
@@ -27,48 +28,35 @@
         <p>Production - Top 3</p>
     </div>
     <article>
-        <div class="articleBox">
+        <div class="articleBox" style="margin-left: 460px">
+            <div class="projectInfo">
+                <p>Discord bot showing all school meals</p>
+                <h4>RICE PAPER</h4>
+            </div>
+            <div class="topProject"><p>TOP 1</p>
+                <button class="viewMore">View More ></button>
+            </div>
             <img src="image/top1.png">
-            <div class="topInfo">
-                <div class="projectInfo">
-                    <h4>RICE PAPER</h4>
-                    <p>Discord bot showing all school meals</p>
-                </div>
-                <div class="projectButton">
-                    <button class="viewMore">View More ></button>
-                </div>
-                <div class="topProject"><p>TOP 1</p></div>
-            </div>
         </div>
-    </article>
-    <article>
         <div class="articleBox">
+            <div class="projectInfo">
+                <p>Mini-games to enjoy on Discord</p>
+                <h4>MINICRAFT WIKI</h4>
+            </div>
+            <div class="topProject"><p>TOP 2</p>
+                <button class="viewMore">View More ></button>
+            </div>
             <img src="image/top2.png">
-            <div class="topInfo">
-                <div class="projectInfo">
-                    <h4>MINICRAFT WIKI</h4>
-                    <p>Mini-games to enjoy on Discord</p>
-                </div>
-                <div class="projectButton">
-                    <button class="viewMore">View More ></button>
-                </div>
-                <div class="topProject"><p>TOP 2</p></div>
-            </div>
         </div>
-    </article>
-    <article>
         <div class="articleBox">
-            <img src="image/top3.png">
-            <div class="topInfo">
-                <div class="projectInfo">
-                    <h4>MATJIP</h4>
-                    <p>A site that finds all the restaurants in the world</p>
-                </div>
-                <div class="projectButton">
-                    <button class="viewMore">View More ></button>
-                </div>
-                <div class="topProject"><p>TOP 3</p></div>
+            <div class="projectInfo">
+                <p>A site that finds all the restaurants in the world</p>
+                <h4>MATJIP</h4>
             </div>
+            <div class="topProject"><p>TOP 3</p>
+                <button class="viewMore">View More ></button>
+            </div>
+            <img src="image/top3.png">
         </div>
     </article>
 </section>
@@ -85,18 +73,5 @@
         </div>
     </div>
 </footer>
-<script>
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            $('article').each(function (i) {
-                let bottom_of_element = $(this).offset().top + $(this).outerHeight();
-                let bottom_of_window = $(window).scrollTop() + $(window).height();
-                if (bottom_of_window > bottom_of_element) {
-                    $(this).animate({'opacity': '1'}, 700);
-                }
-            });
-        });
-    });
-</script>
 </body>
 </html>

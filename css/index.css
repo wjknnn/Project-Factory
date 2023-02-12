@@ -8,22 +8,38 @@
 
 
 .landingImg {
-    padding-top: 120px;
+    padding: 60px 0 0 0;
     width: 100%;
-    height: 594px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
 }
 
-.landingImg h1 {
+.landingImg div {
+    top: 100px;
+    left: 460px;
+    display: flex;
+    align-content: center;
     position: absolute;
+}
+
+.landingImg h1 {
     font-style: normal;
     font-weight: 900;
-    font-size: 128px;
-    line-height: 150px;
+    font-size: 36px;
+    line-height: 30px;
     color: white;
+}
+
+.landingImg h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 16px;
+    color: white;
+    margin-left: 10px;
 }
 
 section {
@@ -34,136 +50,114 @@ section {
 }
 
 .popularProject {
-    width: 1520px;
-    height: 250px;
+    width: 1000px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .popularProject h3 {
-    height: 50px;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 47px;
+    font-weight: 600;
+    font-size: 28px;
     margin-bottom: 12px;
 }
 
 .popularProject p {
-    height: 30px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 article {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 560px;
     width: 100%;
-    margin-bottom: 150px;
-    opacity: 0;
+    color: white;
 }
 
 .articleBox {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 1520px;
-    height: 400px;
+    height: 340px;
+    width: 340px;
+    background-color: black;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 25%);
+    transition: 0.4s;
 }
 
-.topInfo {
-    height: 100%;
-    width: 616px;
+.articleBox img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.articleBox:hover {
+    transform: scale(1.01);
 }
 
 .projectInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 132px;
     width: 100%;
 }
 
 .projectInfo h4 {
-    height: 94px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 94px;
-    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 28px;
 }
 
 .projectInfo p {
-    height: 23px;
-    font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
 
-.projectButton {
-    height: 221px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.projectButton button {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
+.viewMore {
+    font-weight: 300;
+    font-size: 16px;
     border: none;
-    background-color: white;
+    background-color: black;
+    color: #2997ff;
     cursor: pointer;
-    transition: 0.2s;
-}
-
-.projectButton button:hover {
-    transform: translateX(20px);
 }
 
 .topProject {
-    height: 47px;
     width: 100%;
     display: flex;
-    justify-content: end;
     align-items: center;
 }
 
 .topProject p {
-    height: 47px;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 47px;
-    color: #D2D2D2;
+    font-weight: 200;
+    font-size: 16px;
+    margin-right: 10px;
 }
 
 footer {
-    height: 200px;
+    height: 220px;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: black;
     margin-top: 100px;
+    padding-top: 80px;
 }
 
-.footerGrid{
+.footerGrid {
     height: 40px;
-    width: 79.2%;
+    width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footerInfo{
+.footerInfo {
     height: 40px;
     width: 174px;
     color: white;
@@ -172,7 +166,7 @@ footer {
     justify-content: space-between;
 }
 
-.footerInfo div p{
+.footerInfo div p {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -180,17 +174,22 @@ footer {
     height: 40px;
 }
 
-.footerInfo p{
+.footerInfo p {
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 100%;
 }
 
-.footerLink{
+.footerLink {
     height: 40px;
-    width: 100px;
+    width: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footerLink img {
+    height: 24px;
+    cursor: pointer;
 }
